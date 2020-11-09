@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Game Details</title>
+       <link rel="stylesheet" type="text/css" href="./css/find_game.css">
+    
+</head>
+<body>
+    <div class="find_game">
+    <label><p><h3>Enter Name to get Game details</h3></p></label>
+    <input type="text" id="search_text" onkeyup="search()"><br><br>
+    <span id="games"></span>
+    <script>
+        const search = () => {
+            const search_text = document.getElementById('search_text').value;
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("games").innerHTML = this.responseText;
+                }
+            };
+            xmlhttp.open("GET", "game_ajax.jsp?val=" + search_text, true);
+            xmlhttp.send();
+
+        };
+    </script>
+    </div>
+
+</body>
+</html>
