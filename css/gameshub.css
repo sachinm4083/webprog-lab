@@ -1,0 +1,66 @@
+.top-navigation {
+	overflow: hidden;
+	position: fixed;
+	background-color: #494947;
+	top: 0;
+	left: 0;
+	width: 100%;
+
+}
+.top-navigation a {
+	float: left;
+	display: block;
+	color: #FFB30F;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+body {
+	margin: 0;
+	background: hsla(0, 0%, 0%, 1);
+
+	background: linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, hsla(184, 100%, 63%, 1) 90%, hsla(0, 0%, 0%, 1) 100%);
+
+	background: -moz-linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, hsla(184, 100%, 63%, 1) 90%, hsla(0, 0%, 0%, 1) 100%);
+
+	background: -webkit-linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, hsla(184, 100%, 63%, 1) 90%, hsla(0, 0%, 0%, 1) 100%);
+
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#40F2FF", GradientType=1 );
+}
+#welcome {
+	padding-top: 70px;
+  	padding-left: 20px;
+  	padding-bottom: 15px;
+	text-align: center;
+}
+#logo {
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-bottom: 15px;
+	text-align: center;
+}
+#featured {
+	overflow: hidden;
+	background-color: #494947;
+	text-align: left;
+	color: #FFB30F;
+	padding-left: 20px;
+	padding-right: 60px;
+	font-size: 17px;
+}
+.footer {
+	text-align: right;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+.foot-bar a {
+	float: right;
+	display: block;
+	color: #FFB30F;
+	text-align: right;
+	padding: 14px 16px ;
+	text-decoration: none;
+	font-size: 17px;
+}

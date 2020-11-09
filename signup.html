@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>signup</title>
+
+<style>
+
+
+.form{
+    padding:30px;
+}
+.button{
+    background-color:DodgerBlue;
+   
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  margin: 30px 30px;
+  font-size: 16px;
+  
+
+}
+
+input[type=text ] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  }
+  input[type=password ] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  }
+  input[type=email ] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  }
+.foot{
+    text-align: center;
+
+}
+
+</style>
+
+
+
+</head>
+<body style = "background-color:#bcb5f7">
+
+<form id="form" class='form' action="modules/register.php" method="post">
+  <label for="fname"><b>First Name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last Name:</label><br>
+  <input type="text" id="lname" name="lname"><br>
+  <label for="lname">E-Mail:</label><br>
+  <input type="email" id="email" name="email"><br>
+  <label for="lname">New Password:</label><br>
+  <input type="password" id="pass" name="pass"><br>
+  <label for="lname">Confirm Password:</b></label><br>
+  <input type="password" id="cpass"><br>
+  <button type="button" onclick="validation()" >submit</button>
+
+</form> 
+
+<footer class='fooot'>
+    <p><b>©GAMESTOP-Sachin<br>
+    
+  </footer>
+  <script src="./scripts/validation.js"></script>
+</body>
+</html>
